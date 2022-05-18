@@ -1,0 +1,19 @@
+// ブレークポイント
+$breakpoint: (
+  sp: "screen and (max-width: 780px)",
+);
+@mixin mq($bp) {
+  @media #{map-get($breakpoint, $bp)} {
+    @content;
+  }
+}
+
+// vwに変換
+@function vw($num) { 
+  $viewport: 1400;
+  @return $num / $viewport * 100vw;
+}
+@function vw_sp($num) { 
+  $viewport: 780;
+  @return $num / $viewport * 100vw;
+}

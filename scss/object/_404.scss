@@ -1,0 +1,33 @@
+@use "../base" as base;
+
+/* ============================================
+  404 
+============================================ */
+.ly_404_main {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  .bl_404_body {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+    p {
+      font-size: base.vw(25);
+      margin: 0 0 base.vw(50);
+      line-height: 1.6;
+      letter-spacing: 0.01em;
+      @include base.mq(sp) {
+        font-size: base.vw_sp(50);
+        margin: 0 0 base.vw_sp(100);
+      }
+    }
+    .el_btn {
+      margin: auto;
+    }
+  }
+}
