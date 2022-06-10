@@ -4,7 +4,7 @@
 */
 function register_stylesheet()
 { //読み込むCSSを登録する
-    wp_register_style('style', get_template_directory_uri().'/css/style.css');
+    wp_register_style('style', get_template_directory_uri().'/css/style.min.css');
 }
 function add_stylesheet()
 { //登録したCSSを以下の順番で読み込む
@@ -26,7 +26,7 @@ add_action('init', 'modify_jquery');
 
 function register_script()
 { //読み込むJSを登録する
-    wp_register_script('script', get_template_directory_uri().'/js/script.js');
+    wp_register_script('script', get_template_directory_uri().'/js/script.min.js');
 }
 function add_script()
 { //登録したJSを以下の順番で読み込む

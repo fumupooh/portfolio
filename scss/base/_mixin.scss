@@ -1,6 +1,6 @@
 // ブレークポイント
 $breakpoint: (
-  sp: "screen and (max-width: 780px)",
+  sp: "screen and (max-width: 480px)",
 );
 @mixin mq($bp) {
   @media #{map-get($breakpoint, $bp)} {
